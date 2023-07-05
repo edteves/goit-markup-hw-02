@@ -8,6 +8,7 @@
   --cornflower: #e7e9fc;
   --iris: #4d5ae5;
   --cloud: #f4f4fd;
+  --ocean: #404bbf;
 }
 
 body {
@@ -47,42 +48,54 @@ ul li {
 
 .menu {
   color: var(--navyblue, #2e2f42);
+
   /* Body Medium */
   font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 
-li a {
+.menu-links {
   text-decoration: none;
 }
 
-.menu a {
+.menu-links {
   color: var(--navyblue, #2e2f42);
+
   /* Body Medium */
   font-size: 16px;
+  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-
-.menu a:hover,
-.menu a:focus {
-  color: var(--iris, #4d5ae5);
+.menu-links:hover,
+.menu-links:focus {
+  color: var(--ocean);
 }
 
-.menu-right a {
+.menu-links.active-link {
+  color: var(--ocean);
+}
+
+.menu-right-links {
+  text-decoration: none;
   color: var(--slate, #434455);
+
   /* Body */
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 
-.menu-right a:hover,
-.menu-right a:focus {
-  color: var(--iris, #4d5ae5);
+.menu-right-links:hover,
+.menu-right-links:focus {
+  color: var(--ocean);
 }
 
 .hero-section {
@@ -99,21 +112,91 @@ li a {
   line-height: 60px;
   letter-spacing: 1.12px;
 }
-
-.link-for-button {
+.button-order-service {
   border-radius: 4px;
   background: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   color: var(--white, #fff);
-
   /* Button Text */
   font-size: 16px;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
-  border: none;
+  border: 1px solid var(--iris, #4d5ae5);
+  cursor: pointer;
 }
+
+.button-order-service:hover {
+  border-radius: 4px;
+  background: var(--ocean, #404bbf);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-title {
+  /* Header 3 */
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.benefit_description {
+  color: var(--slate, #434455);
+
+  /* Body */
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.section_title {
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+
+  /* Header 2 */
+  font-size: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.team-members-name {
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+
+  /* Header 3 */
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.team-members-role {
+  color: var(--slate, #434455);
+  text-align: center;
+
+  /* Body */
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
 .our-team-text {
   text-align: center;
   /* Header 2 */
