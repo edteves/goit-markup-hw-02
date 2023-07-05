@@ -114,6 +114,7 @@ ul li {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
+  cursor: pointer;
 }
 
 .filter-button {
@@ -131,6 +132,7 @@ ul li {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
+  cursor: pointer;
 }
 
 .filter-button:hover {
