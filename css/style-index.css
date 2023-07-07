@@ -14,13 +14,11 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--navyblue, #2e2f42);
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.4px;
-}
 
-ul li {
-  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .logo {
@@ -44,51 +42,37 @@ ul li {
   text-transform: uppercase;
 }
 
-.menu {
-  /* Body Medium */
-  font-size: 16px;
-
-  font-weight: 500;
-
-  letter-spacing: 0.32px;
-}
-
-.menu-links {
+.link {
   text-decoration: none;
 }
 
-.menu-links {
+.list {
+  list-style: none;
+}
+
+.menu-link {
   color: var(--navyblue, #2e2f42);
-
-  /* Body Medium */
-  font-size: 16px;
   font-weight: 500;
-
-  letter-spacing: 0.32px;
 }
-.menu-links:hover,
-.menu-links:focus {
+
+.menu-link.active-link {
   color: var(--ocean);
 }
 
-.menu-links.active-link {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--ocean);
+  cursor: pointer;
 }
 
-.menu-right-links {
-  text-decoration: none;
+.menu-right {
   color: var(--slate, #434455);
-
-  /* Body */
-  font-size: 16px;
-  font-weight: 400;
-
-  letter-spacing: 0.32px;
 }
 
-.menu-right-links:hover,
-.menu-right-links:focus {
+.menu-right:hover,
+.menu-right:focus {
   color: var(--ocean);
+  cursor: pointer;
 }
 
 .hero-section {
@@ -97,55 +81,46 @@ ul li {
 
 .heading-text {
   color: var(--white, #fff);
-  text-align: center;
-  /* Header 1 */
   font-size: 56px;
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 1.12px;
 }
+
 .button-order-service {
   border-radius: 4px;
   background: var(--iris, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   color: var(--white, #fff);
-  /* Button Text */
-  font-size: 16px;
   font-weight: 500;
-
   letter-spacing: 0.64px;
-  border: 1px solid var(--iris, #4d5ae5);
   cursor: pointer;
+  border: 1px solid var(--ocean, #404bbf);
 }
 
 .button-order-service:hover {
   border-radius: 4px;
   background: var(--ocean, #404bbf);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--ocean, #404bbf);
 }
 
 .benefit-title {
-  /* Header 3 */
+  color: var(--navyblue, #2e2f42);
   font-size: 20px;
-
   font-weight: 500;
+  letter-spacing: 0.4px;
 }
 
 .benefit-description {
-  color: var(--slate, #434455);
-
-  /* Body */
-  font-size: 16px;
-
   font-weight: 400;
-  letter-spacing: 0.32px;
+  line-height: 24px;
 }
 
 .section-title {
-  /* Header 2 */
+  color: var(--navyblue, #2e2f42);
   font-size: 36px;
-
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.72px;
@@ -153,23 +128,9 @@ ul li {
 }
 
 .team-members-name {
-  /* Header 3 */
-
+  font-size: 20px;
   font-weight: 500;
-}
-
-.team-members-role {
-  color: var(--slate, #434455);
-
-  /* Body */
-  font-size: 16px;
-  font-weight: 400;
-
-  letter-spacing: 0.32px;
-}
-
-.our-team-section {
-  background: var(--cloud, #f4f4fd);
+  letter-spacing: 0.4px;
 }
 
 footer {

@@ -12,17 +12,14 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   color: var(--navyblue, #2e2f42);
 
+  /* Button Text */
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
-}
-
-ul li {
-  list-style: none;
 }
 
 .logo {
@@ -50,55 +47,39 @@ ul li {
   text-transform: uppercase;
 }
 
-.menu {
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.menu-link {
   color: var(--navyblue, #2e2f42);
-
-  /* Body Medium */
-
+  font-size: 16px;
+  font-weight: 500;
   letter-spacing: 0.32px;
 }
 
-.menu-links {
-  text-decoration: none;
-}
-
-.menu-links {
-  color: inherit;
-
-  letter-spacing: 0.32px;
-}
-.menu-links:hover,
-.menu-links:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--ocean);
 }
 
-.menu-links.active-link {
+.menu-link.active-link {
   color: var(--ocean);
 }
 
-.menu-right-items-list {
-  text-decoration: none;
+.menu-right {
   color: var(--slate, #434455);
-
   font-weight: 400;
-
   letter-spacing: 0.32px;
 }
 
-.menu-right-items-list:hover,
-.menu-right-items-list:focus {
+.menu-right:hover,
+.menu-right:focus {
   color: var(--ocean);
-}
-
-.filter-button.filter-active {
-  border-radius: 4px;
-  background: var(--ocean, #404bbf);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-
-  color: var(--white, #fff);
-  border: var(--ocean, #404bbf);
-  cursor: pointer;
 }
 
 .filter-button {
@@ -107,46 +88,47 @@ ul li {
   background: var(--cloud, #f4f4fd);
 
   color: var(--iris, #4d5ae5);
-  text-align: center;
 
   /* Button Text */
-  font-size: 16px;
   font-family: inherit;
-  font-style: normal;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
   cursor: pointer;
 }
 
-.filter-button:hover {
+.filter-button.filter-active {
+  background: var(--ocean, #404bbf);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  color: var(--white, #fff);
+  border: 1px solid var(--ocean, #404bbf);
+}
+
+.filter-button:hover,
+.filter-button:focus {
   border-radius: 4px;
   background: var(--ocean, #404bbf);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   color: var(--white, #fff);
-  border: 1px solid #404bbf;
+  border: 1px solid var(--ocean, #404bbf);
 }
 
 .card-title {
-  /* Header 3 */
   font-size: 20px;
-
-  font-style: normal;
-
+  font-weight: 500;
   letter-spacing: 0.4px;
 }
 
 .card-description {
   color: var(--slate, #434455);
 
-  /* Body */
-
-  font-style: normal;
   font-weight: 400;
-
   letter-spacing: 0.32px;
 }
+
 footer {
   flex-shrink: 0;
   background: var(--navyblue, #2e2f42);
